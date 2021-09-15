@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hatuanem199801/express-vercel.git"
+    "url": "git+https://github.com/adithyapaib/getIP"
   },
   "keywords": [],
   "author": "Adithya Pai B",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hatuanem199801/express-vercel/issues"
+    "url": "https://github.com/adithyapaib/getIP"
   },
-  "homepage": "https://github.com/hatuanem199801/express-vercel#readme",
+  "homepage": "https://get-ip-eight.vercel.app/",
   "dependencies": {
     "express": "^4.17.1"
   }
