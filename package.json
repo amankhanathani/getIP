@@ -1,7 +1,7 @@
 {
-  "name": "express-vercel",
+  "name": "getip",
   "version": "1.0.0",
-  "description": "Deploy express js to vercel.",
+  "description": "Get your Public IP address.",
   "main": "index.js",
   "engines": {
     "node": "14.x"
@@ -14,14 +14,13 @@
     "url": "git+https://github.com/hatuanem199801/express-vercel.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Adithya Pai B",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hatuanem199801/express-vercel/issues"
   },
   "homepage": "https://github.com/hatuanem199801/express-vercel#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "uuid": "^8.3.2"
+    "express": "^4.17.1"
   }
 }
