@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 2.5;
+      
+    }
+  </style>
+  <body>
+
+    <div id="element"></div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      const getIP = async () =>
+        await fetch(window.location.href + "/api").then((response) =>
+          response.json()
+        );
+
+      const type = async () => {
+        const data = await getIP();
+        var typed = await new Typed("#element", {
+          // Waits 1000ms after typing "First"
+          strings: [ 'Fetching data  . . . .',
+            `Hey visitor Your IP is ${data.IP} <br> Your device Confifuration is ${data.device} <br> You are using the browser ${data.browser} : )`,
+          ],
+          // Start typing after 1000ms
+          typeSpeed: 50,
+          showCursor: false,
+        });
+      };
+      type();
+    </script>
+  </body>
+</html>
