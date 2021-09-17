@@ -34,8 +34,8 @@
         const data = await getIP();
         var typed = await new Typed("#element", {
           // Waits 1000ms after typing "First"
-          strings: [ 'Fetching data  . . . .',
-            `Hey visitor Your IP is ${data.IP} <br> Your device Confifuration is ${data.device} <br> You are using the browser ${data.browser} : )`,
+          strings: [ 'Fetching data  . . . .', `<title>${data.IP}</title>`,
+            `Hey visitor Your IP is ${data.IP} <br> Your device Configuration is ${data.device} <br> You are using the browser ${data.browser} : )`,
           ],
           // Start typing after 1000ms
           typeSpeed: 50,
